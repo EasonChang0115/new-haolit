@@ -1,0 +1,21 @@
+{
+  "name": "new-hao-lit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vitepress dev --host",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.1.0"
+  },
+  "dependencies": {
+    "auto-typer-vue3": "^1.2.2",
+    "sass": "^1.77.2"
+  }
+}

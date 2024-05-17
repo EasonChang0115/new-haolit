@@ -1,0 +1,14 @@
+[
+  {
+    "id": 2,
+    "icon": "pe-7s-phone",
+    "title": "Web & Mobile App 開發",
+    "content": "豐富的前端網站、APP 開發經驗"
+  },
+  {
+    "id": 4,
+    "icon": "pe-7s-diskette",
+    "title": "前端技術分享部落格",
+    "content": "分享前端技術文章，提供學習資源，紀錄學習心得"
+  }
+]
