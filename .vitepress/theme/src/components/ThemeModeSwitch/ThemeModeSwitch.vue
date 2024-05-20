@@ -5,7 +5,7 @@
     aria-label="theme-switcher"
   >
     <SunIcon
-      v-if="mode === 'light'"
+      v-if="globalStore.themeMode === 'light'"
       :style="{
         fill: 'black',
       }"
@@ -19,32 +19,22 @@
   </button>
 </template>
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, watch } from "vue";
+import { useGlobalStore } from "../../store/global";
+
 import SunIcon from "./SunIcon.vue";
 import MoonIcon from "./MoonIcon.vue";
 import applyMode from "./applyMode";
 
-const mode = ref("dark");
-
+const globalStore = useGlobalStore();
 const setModule = () => {
-  mode.value = mode.value === "light" ? "dark" : "light";
-  localStorage.setItem("themeMode", mode.value);
-  applyMode(mode.value);
+  const mode = globalStore.themeMode === "light" ? "dark" : "light";
+  globalStore.setThemeMode(mode);
+  applyMode(mode);
 };
 
 onMounted(() => {
-  const themeMode = localStorage.getItem("themeMode") || "auto";
-  if (themeMode === "auto") {
-    window.matchMedia("(prefers-color-scheme: dark)").addListener(() => {
-      applyMode(themeMode);
-    });
-    window.matchMedia("(prefers-color-scheme: light)").addListener(() => {
-      applyMode(themeMode);
-    });
-    return;
-  }
-  mode.value = themeMode;
-  applyMode(mode.value);
+  applyMode(globalStore.themeMode);
 });
 </script>
 

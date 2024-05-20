@@ -25,13 +25,19 @@
         </div>
 
         <div class="gallery full-width">
-          <div class="col-md-6 items graphic lg-mr wow fadeInUp" data-wow-delay=".4s">
+          <div
+            class="col-md-6 items graphic lg-mr wow fadeInUp"
+            data-wow-delay=".4s"
+          >
             <div class="item-img">
               <div class="cont">
                 <h6>Creative Mobile App</h6>
                 <p>Ui / Ux creative mobile app design</p>
               </div>
-              <NuxtLink class="rota" to="/project-details2/project-details2-dark">
+              <NuxtLink
+                class="rota"
+                to="/project-details2/project-details2-dark"
+              >
                 <img src="/img/portfolio/freelancer/1.jpg" alt="image" />
                 <div class="item-img-overlay"></div>
               </NuxtLink>
@@ -55,7 +61,10 @@
                 <h6>Creative Mobile App</h6>
                 <p>Ui / Ux creative mobile app design</p>
               </div>
-              <NuxtLink class="rota" to="/project-details2/project-details2-dark">
+              <NuxtLink
+                class="rota"
+                to="/project-details2/project-details2-dark"
+              >
                 <img src="/img/portfolio/freelancer/2.jpg" alt="image" />
                 <div class="item-img-overlay"></div>
               </NuxtLink>
@@ -79,7 +88,10 @@
                 <h6>Creative Mobile App</h6>
                 <p>Ui / Ux creative mobile app design</p>
               </div>
-              <NuxtLink class="rota" to="/project-details2/project-details2-dark">
+              <NuxtLink
+                class="rota"
+                to="/project-details2/project-details2-dark"
+              >
                 <img src="/img/portfolio/freelancer/3.jpg" alt="image" />
                 <div class="item-img-overlay"></div>
               </NuxtLink>
@@ -97,13 +109,19 @@
             </div>
           </div>
 
-          <div class="col-md-6 items web graphic wow fadeInUp" data-wow-delay=".4s">
+          <div
+            class="col-md-6 items web graphic wow fadeInUp"
+            data-wow-delay=".4s"
+          >
             <div class="item-img">
               <div class="cont">
                 <h6>Creative Mobile App</h6>
                 <p>Ui / Ux creative mobile app design</p>
               </div>
-              <NuxtLink class="rota" to="/project-details2/project-details2-dark">
+              <NuxtLink
+                class="rota"
+                to="/project-details2/project-details2-dark"
+              >
                 <img src="/img/portfolio/freelancer/4.jpg" alt="image" />
                 <div class="item-img-overlay"></div>
               </NuxtLink>
@@ -127,7 +145,10 @@
                 <h6>Creative Mobile App</h6>
                 <p>Ui / Ux creative mobile app design</p>
               </div>
-              <NuxtLink class="rota" to="/project-details2/project-details2-dark">
+              <NuxtLink
+                class="rota"
+                to="/project-details2/project-details2-dark"
+              >
                 <img src="/img/portfolio/freelancer/5.jpg" alt="image" />
                 <div class="item-img-overlay"></div>
               </NuxtLink>
@@ -151,7 +172,10 @@
                 <h6>Creative Mobile App</h6>
                 <p>Ui / Ux creative mobile app design</p>
               </div>
-              <NuxtLink class="rota" to="/project-details2/project-details2-dark">
+              <NuxtLink
+                class="rota"
+                to="/project-details2/project-details2-dark"
+              >
                 <img src="/img/portfolio/freelancer/6.jpg" alt="image" />
                 <div class="item-img-overlay"></div>
               </NuxtLink>
@@ -174,9 +198,9 @@
   </section>
 </template>
 
-
 <script setup>
-import initIsotope from "@/common/initIsotope";
+import { onMounted } from "vue";
+import initIsotope from "../../common/initIsotope";
 
 onMounted(() => {
   setTimeout(() => {

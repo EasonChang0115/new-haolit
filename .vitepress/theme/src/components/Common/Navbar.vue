@@ -1,5 +1,9 @@
 <template>
-  <nav ref="navbar" class="navbar navbar-expand-lg change">
+  <nav
+    ref="navbar"
+    class="navbar navbar-expand-lg change"
+    :class="globalStore.themeMode === 'light' ? 'light' : ''"
+  >
     <div class="container">
       <a href="/" class="logo"> <img src="/logo.png" alt="logo" /></a>
 
@@ -64,10 +68,14 @@
   </nav>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
+import { useGlobalStore } from "../../store/global";
+
 import ThemeModeSwitch from "../ThemeModeSwitch/ThemeModeSwitch.vue";
 import getSiblings from "../../common/getSiblings.js";
+
+const globalStore = useGlobalStore();
 
 function handleDropdown(e) {
   getSiblings(e.target.parentElement)

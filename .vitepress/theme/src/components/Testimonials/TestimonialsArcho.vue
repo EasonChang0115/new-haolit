@@ -114,9 +114,9 @@
 </template>
 
 <script setup>
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Autoplay, Navigation } from 'swiper';
-import removeSlashFromBagination from '@/common/removeSlashpagination';
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Autoplay, Navigation } from "swiper";
+import removeSlashFromBagination from "@/common/removeSlashpagination";
 
 const settings = {
   modules: [Autoplay, Navigation],
@@ -141,9 +141,9 @@ const settings = {
     480: {
       slidesPerView: 1,
       centeredSlides: false,
-    }
+    },
   },
-}
+};
 
 onMounted(() => {
   removeSlashFromBagination();
