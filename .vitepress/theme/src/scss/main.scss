@@ -1230,6 +1230,11 @@ span:hover {
 
 /* ====================== [ End Text Animation & Images ] ====================== */
 /* ====================== [ Start Cursor Style ] ====================== */
+
+body {
+  cursor: var(--body-cursor);
+}
+
 .mouse-cursor {
   position: fixed;
   left: 0;
@@ -1242,6 +1247,9 @@ span:hover {
 }
 
 .cursor-inner {
+  margin-left: var(--cursor-inner-margin);
+  margin-top: var(--cursor-inner-margin);
+
   width: 6px;
   height: 6px;
   z-index: 10000001;
@@ -1255,19 +1263,19 @@ span:hover {
 }
 
 .cursor-inner.cursor-hover {
-  margin-left: -35px;
-  margin-top: -35px;
-  width: 70px;
-  height: 70px;
+  margin-left: var(--cursor-inner-hover-margin);
+  margin-top: var(--cursor-inner-hover-margin);
+  width: var(--cursor-inner-hover-width);
+  height: var(--cursor-inner-hover-height);
   background-color: #12c2e9;
   opacity: 0.3;
 }
 
 .cursor-outer {
-  margin-left: -12px;
-  margin-top: -12px;
-  width: 30px;
-  height: 30px;
+  margin-left: var(--cursor-outer-margin);
+  margin-top: var(--cursor-outer-margin);
+  width: var(--cursor-outer-width);
+  height: var(--cursor-outer-height);
   border: 1px solid #12c2e9;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

@@ -1,5 +1,14 @@
 const modeOptions = {
   light: {
+    "--body-cursor": "none",
+    "--cursor-inner-margin": "2px",
+    "--cursor-inner-hover-margin": "-40px",
+    "--cursor-inner-hover-width": "80px",
+    "--cursor-inner-hover-height": "80px",
+    "--cursor-outer-margin": "-15px",
+    "--cursor-outer-width": "40px",
+    "--cursor-outer-height": "40px",
+
     "--font-color": "#888",
     "--body-background-color": "white",
     "--p-font-color": "#111",
@@ -27,6 +36,15 @@ const modeOptions = {
     "--nav-scroll-border-color": "#f5f5f5",
   },
   dark: {
+    "--body-cursor": "default",
+    "--cursor-inner-margin": "0px",
+    "--cursor-inner-hover-margin": "-35px",
+    "--cursor-inner-hover-width": "70px",
+    "--cursor-inner-hover-height": "70px",
+    "--cursor-outer-margin": "-12px",
+    "--cursor-outer-width": "30px",
+    "--cursor-outer-height": "30px",
+
     "--font-color": "#fff",
     "--body-background-color": "#111215",
     "--p-font-color": "#a4a7b1",
