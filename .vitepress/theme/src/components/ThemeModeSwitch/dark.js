@@ -27,7 +27,7 @@ export default {
   "--nav-dropdown-bg-color": "#1b1d21",
 
   "--nav-dropdown-item-color": "#fff",
-  "--nav-scroll-bg-color": "#1b2d21",
+  "--nav-scroll-bg-color": "#1b1d21",
   "--nav-scroll-border-color": "#333538",
   "--nav-scroll-link-color": "",
 
@@ -122,5 +122,5 @@ export default {
   "--footer-sub-bg-color": "initial",
 
   "--response-nav-bar-icon-color": "initial",
-  "--response-nav-scroll-bar-icon-color": "initial",
+  "--response-nav-scroll-bar-icon-color": "white",
 };

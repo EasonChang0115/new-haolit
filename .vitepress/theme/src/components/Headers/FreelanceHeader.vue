@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg-4">
           <div class="img">
-            <img src="/img/hero.jpg" alt="" />
+            <img src="/img/avatar.png" alt="" />
           </div>
         </div>
         <div class="col-lg-8 valign">

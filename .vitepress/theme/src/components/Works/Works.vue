@@ -6,7 +6,7 @@
           <div class="sec-head text-center">
             <h6 class="wow fadeIn" data-wow-delay=".5s">Portfolio</h6>
             <h3 class="wow color-font">
-              Our Recent Web Design &amp; <br />
+              My Recent Web Project &amp; <br />
               Some Past Projects.
             </h3>
           </div>
@@ -17,177 +17,37 @@
       <div class="row">
         <div class="filtering col-12">
           <div class="filter wow fadeIn" data-wow-delay=".5s">
-            <span data-filter="*" class="active"> All </span>
-            <span data-filter=".brand">Branding</span>
-            <span data-filter=".web">Mobile App</span>
-            <span data-filter=".graphic">Creative</span>
+            <span
+              v-for="(tag, index) in filterType"
+              :key="tag.id"
+              :data-filter="tag.id"
+              :class="index === 0 ? 'active' : ''"
+            >
+              {{ tag.name }}
+            </span>
           </div>
         </div>
 
         <div class="gallery full-width">
           <div
-            class="col-md-6 items graphic lg-mr wow fadeInUp"
+            v-for="(item, index) in data"
+            :key="item.link"
+            :class="[item.type]"
+            class="col-md-6 items graphic wow fadeInUp"
             data-wow-delay=".4s"
           >
             <div class="item-img">
               <div class="cont">
-                <h6>Creative Mobile App</h6>
-                <p>Ui / Ux creative mobile app design</p>
+                <h6>{{ item.name }}</h6>
+                <p>{{ item.description }}</p>
               </div>
-              <NuxtLink
-                class="rota"
-                to="/project-details2/project-details2-dark"
-              >
-                <img src="/img/portfolio/freelancer/1.jpg" alt="image" />
+              <a class="rota" :href="item.link" target="_blank">
+                <img :src="item.image" alt="image" />
                 <div class="item-img-overlay"></div>
-              </NuxtLink>
+              </a>
               <div class="tags">
-                <span>
-                  <NuxtLink to="#0">App</NuxtLink>
-                </span>
-                <span>
-                  <NuxtLink to="#0">Fitnes</NuxtLink>
-                </span>
-                <span>
-                  <NuxtLink to="#0">Creative</NuxtLink>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 items web wow fadeInUp" data-wow-delay=".4s">
-            <div class="item-img">
-              <div class="cont">
-                <h6>Creative Mobile App</h6>
-                <p>Ui / Ux creative mobile app design</p>
-              </div>
-              <NuxtLink
-                class="rota"
-                to="/project-details2/project-details2-dark"
-              >
-                <img src="/img/portfolio/freelancer/2.jpg" alt="image" />
-                <div class="item-img-overlay"></div>
-              </NuxtLink>
-              <div class="tags">
-                <span>
-                  <NuxtLink to="#0">App</NuxtLink>
-                </span>
-                <span>
-                  <NuxtLink to="#0">Fitnes</NuxtLink>
-                </span>
-                <span>
-                  <NuxtLink to="#0">Creative</NuxtLink>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 items web wow fadeInUp" data-wow-delay=".4s">
-            <div class="item-img">
-              <div class="cont">
-                <h6>Creative Mobile App</h6>
-                <p>Ui / Ux creative mobile app design</p>
-              </div>
-              <NuxtLink
-                class="rota"
-                to="/project-details2/project-details2-dark"
-              >
-                <img src="/img/portfolio/freelancer/3.jpg" alt="image" />
-                <div class="item-img-overlay"></div>
-              </NuxtLink>
-              <div class="tags">
-                <span>
-                  <NuxtLink to="#0">App</NuxtLink>
-                </span>
-                <span>
-                  <NuxtLink to="#0">Fitnes</NuxtLink>
-                </span>
-                <span>
-                  <NuxtLink to="#0">Creative</NuxtLink>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="col-md-6 items web graphic wow fadeInUp"
-            data-wow-delay=".4s"
-          >
-            <div class="item-img">
-              <div class="cont">
-                <h6>Creative Mobile App</h6>
-                <p>Ui / Ux creative mobile app design</p>
-              </div>
-              <NuxtLink
-                class="rota"
-                to="/project-details2/project-details2-dark"
-              >
-                <img src="/img/portfolio/freelancer/4.jpg" alt="image" />
-                <div class="item-img-overlay"></div>
-              </NuxtLink>
-              <div class="tags">
-                <span>
-                  <NuxtLink to="#0">App</NuxtLink>
-                </span>
-                <span>
-                  <NuxtLink to="#0">Fitnes</NuxtLink>
-                </span>
-                <span>
-                  <NuxtLink to="#0">Creative</NuxtLink>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 items brand wow fadeInUp" data-wow-delay=".4s">
-            <div class="item-img">
-              <div class="cont">
-                <h6>Creative Mobile App</h6>
-                <p>Ui / Ux creative mobile app design</p>
-              </div>
-              <NuxtLink
-                class="rota"
-                to="/project-details2/project-details2-dark"
-              >
-                <img src="/img/portfolio/freelancer/5.jpg" alt="image" />
-                <div class="item-img-overlay"></div>
-              </NuxtLink>
-              <div class="tags">
-                <span>
-                  <NuxtLink to="#0">App</NuxtLink>
-                </span>
-                <span>
-                  <NuxtLink to="#0">Fitnes</NuxtLink>
-                </span>
-                <span>
-                  <NuxtLink to="#0">Creative</NuxtLink>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 items brand wow fadeInUp" data-wow-delay=".4s">
-            <div class="item-img">
-              <div class="cont">
-                <h6>Creative Mobile App</h6>
-                <p>Ui / Ux creative mobile app design</p>
-              </div>
-              <NuxtLink
-                class="rota"
-                to="/project-details2/project-details2-dark"
-              >
-                <img src="/img/portfolio/freelancer/6.jpg" alt="image" />
-                <div class="item-img-overlay"></div>
-              </NuxtLink>
-              <div class="tags">
-                <span>
-                  <NuxtLink to="#0">App</NuxtLink>
-                </span>
-                <span>
-                  <NuxtLink to="#0">Fitnes</NuxtLink>
-                </span>
-                <span>
-                  <NuxtLink to="#0">Creative</NuxtLink>
+                <span v-for="tag in item.tags">
+                  {{ tag }}
                 </span>
               </div>
             </div>
@@ -198,9 +58,25 @@
   </section>
 </template>
 
-<script setup>
-import { onMounted } from "vue";
+<script setup lang="ts">
+import { onMounted, ref } from "vue";
 import initIsotope from "../../common/initIsotope";
+import data from "./data";
+
+const filterType = ref([
+  {
+    id: "*",
+    name: "All",
+  },
+  {
+    id: ".app",
+    name: "App",
+  },
+  {
+    id: ".web",
+    name: "Web",
+  },
+]);
 
 onMounted(() => {
   setTimeout(() => {

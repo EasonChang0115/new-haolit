@@ -4165,10 +4165,7 @@ span:hover {
 .portfolio .gallery .items .item-img {
   overflow: hidden;
   position: relative;
-  -webkit-clip-path: inset(0);
   clip-path: inset(0);
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
