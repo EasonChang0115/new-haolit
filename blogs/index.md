@@ -1,5 +1,6 @@
 ---
 home: true
+isBlog: true
 heroText: HAO Lit 前端
 tagline: I choose to be found doing my duty.
 introduces:

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vitepress dev --host",
@@ -15,7 +16,9 @@
     "vitepress": "^1.1.0"
   },
   "dependencies": {
+    "@types/markdown-it": "^14.1.1",
     "auto-typer-vue3": "^1.2.2",
+    "feed": "^4.2.2",
     "pinia": "^2.1.7",
     "sass": "^1.77.2"
   }

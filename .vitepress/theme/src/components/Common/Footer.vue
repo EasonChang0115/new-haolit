@@ -32,54 +32,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="item md-mb50">
-            <div class="title">
-              <h5>Recent Article</h5>
-            </div>
-            <ul>
-              <li>
-                <div class="img">
-                  <a href="#">
-                    <img src="/img/blog/1.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="sm-post">
-                  <a href="#">
-                    <p>
-                      The Start-Up Ultimate Guide to Make Your WordPress
-                      Journal.
-                    </p>
-                    <span class="date">14 sep 2023</span>
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div class="img">
-                  <a href="#">
-                    <img src="/img/blog/2.jpg" alt="" />
-                  </a>
-                </div>
-                <div class="sm-post">
-                  <a href="#">
-                    <p>
-                      The Start-Up Ultimate Guide to Make Your WordPress
-                      Journal.
-                    </p>
-                    <span class="date">14 sep 2023</span>
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div class="subscribe">
-                  <input type="text" placeholder="Type Your Email" />
-                  <span class="subs pe-7s-paper-plane"></span>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-4">
+        <div class="col-lg-8">
           <div class="item">
             <div class="logo">
               <img src="/logo.png" alt="logo" />

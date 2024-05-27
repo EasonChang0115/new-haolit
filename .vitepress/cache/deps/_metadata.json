@@ -1,37 +1,37 @@
 {
-  "hash": "05931416",
+  "hash": "80b9939c",
   "configHash": "89c97677",
-  "lockfileHash": "86cb2b95",
-  "browserHash": "67637bd7",
+  "lockfileHash": "02386e63",
+  "browserHash": "9bdf90ef",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "236bc8f4",
+      "fileHash": "43dec812",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/vitepress/node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "a6360632",
+      "fileHash": "585b6cef",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "abe67ebe",
-      "needsInterop": false
-    },
-    "auto-typer-vue3": {
-      "src": "../../../node_modules/auto-typer-vue3/dist/esm/index.js",
-      "file": "auto-typer-vue3.js",
-      "fileHash": "3fd5f0f0",
+      "fileHash": "fc75ad97",
       "needsInterop": false
     },
     "pinia": {
       "src": "../../../node_modules/pinia/dist/pinia.mjs",
       "file": "pinia.js",
-      "fileHash": "e5bef050",
+      "fileHash": "cc4409da",
+      "needsInterop": false
+    },
+    "auto-typer-vue3": {
+      "src": "../../../node_modules/auto-typer-vue3/dist/esm/index.js",
+      "file": "auto-typer-vue3.js",
+      "fileHash": "c872be62",
       "needsInterop": false
     }
   },
